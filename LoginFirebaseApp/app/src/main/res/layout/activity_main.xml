@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnRegistrarse"
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="Registrarse"
-        android:text="REGISTRARSE"
-        app:layout_constraintBottom_toTopOf="@+id/btnIniciarS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:text="Register"/>
     <Button
-        android:id="@+id/btnIniciarS"
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="574dp"
-        android:onClick="IS"
-        android:text="INICIAR SESIÓN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarse" />
-</android.support.constraint.ConstraintLayout>
+        android:text="Login"/>
+
+</LinearLayout>

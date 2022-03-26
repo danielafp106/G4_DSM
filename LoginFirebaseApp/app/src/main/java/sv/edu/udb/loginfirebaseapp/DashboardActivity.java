@@ -1,6 +1,6 @@
-package udb.fp180271dsm.loginfirebaseapp;
+package sv.edu.udb.loginfirebaseapp;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -9,7 +9,5 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
-
     }
 }

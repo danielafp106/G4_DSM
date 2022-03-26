@@ -1,69 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".RegistrationActivity">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginBottom="8dp"
-        android:text="Registre una nuena cuenta"
-        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Register new account" />
 
     <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/txtxPass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/txtxPass"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="380dp"
-        android:text="Registrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtxPass" />
+        android:text="Register" />
 
-</android.support.constraint.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

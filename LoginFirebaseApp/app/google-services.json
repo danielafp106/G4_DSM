@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:870097981511:android:e1c08242f111f66b8fe162",
+        "mobilesdk_app_id": "1:870097981511:android:285b5acde4189c768fe162",
         "android_client_info": {
-          "package_name": "udb.fp180271dsm.loginfirebaseapp"
+          "package_name": "sv.edu.udb.loginfirebaseapp"
         }
       },
       "oauth_client": [

@@ -1,4 +1,4 @@
-package udb.fp180271dsm.loginfirebaseapp;
+package sv.edu.udb.loginfirebaseapp;
 
 import org.junit.Test;
 
